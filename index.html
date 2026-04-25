@@ -1,61 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <title>Artesanía del Altiplano</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
-/* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BASE */
-
-html, body {
+body {
     width: 100%;
-    overflow-x: hidden;
     font-family: Arial, sans-serif;
+    background: white;
+    overflow-x: hidden;
 }
-
-/* CONTENEDOR PRINCIPAL */
-
-.contenedor {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-}
-
-/* IMAGEN */
 
 .portada {
     width: 100%;
-}
-
-.portada img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
-/* CORREO */
-
 .correo {
-    width: 100%;
     background-color: #5a2d1f;
     color: white;
     text-align: center;
-    padding: 16px;
-    font-size: 18px;
+    padding: 16px 8px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -64,110 +38,51 @@ html, body {
     text-decoration: none;
 }
 
-/* WHATSAPP */
-
 .whatsapp {
     position: fixed;
-    right: 20px;
-    width: 65px;
-    height: 65px;
+    right: 16px;
+    width: 58px;
+    height: 58px;
     background-color: #25D366;
+    color: white;
     border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 6px 14px rgba(0,0,0,0.35);
     z-index: 9999;
 }
 
 .whatsapp1 {
-    bottom: 95px;
+    bottom: 90px;
 }
 
 .whatsapp2 {
     bottom: 20px;
 }
-
-.whatsapp img {
-    width: 36px;
-}
-
-/* AJUSTES PARA CELULAR */
-
-@media (max-width: 768px) {
-
-    .correo {
-        font-size: 15px;
-        padding: 14px;
-    }
-
-    .whatsapp {
-        width: 58px;
-        height: 58px;
-        right: 14px;
-    }
-
-    .whatsapp img {
-        width: 32px;
-    }
-
-}
-
 </style>
-
 </head>
 
 <body>
 
-<div class="contenedor">
-
-<!-- IMAGEN -->
-
-<div class="portada">
-
-<img src="Fondo4.jpg.png" alt="Artesanía del Altiplano">
-
-</div>
-
-<!-- CORREO -->
+<img src="Fondo4.jpg.png" class="portada" alt="Artesanía del Altiplano">
 
 <div class="correo">
-
-Ventas:
-<a href="mailto:yanethsandraquisecondori@gmail.com">
-yanethsandraquisecondori@gmail.com
-</a>
-
+    Ventas:
+    <a href="mailto:yanethsandraquisecondori@gmail.com">
+        yanethsandraquisecondori@gmail.com
+    </a>
 </div>
 
-</div>
+<a href="https://wa.me/51974250064" class="whatsapp whatsapp1" target="_blank">☎</a>
 
-<!-- WHATSAPP 1 -->
-
-<a href="https://wa.me/51974250064"
-class="whatsapp whatsapp1"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-</a>
-
-<!-- WHATSAPP 2 -->
-
-<a href="https://wa.me/51914856702"
-class="whatsapp whatsapp2"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-</a>
+<a href="https://wa.me/51914856702" class="whatsapp whatsapp2" target="_blank">☎</a>
 
 </body>
-
 </html>
-<a href="https://wa.me/51914856702" class="whatsapp-float whatsapp2" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="whatsapp-icon" alt="WhatsApp">
-</a>
 
 </body>
 </html>
