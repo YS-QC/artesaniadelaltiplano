@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <title>Artesanía del Altiplano</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
+
 html, body {
     width: 100%;
-    min-height: 100%;
     overflow-x: hidden;
     background: white;
     font-family: Arial, sans-serif;
 }
 
-img {
+/* IMAGEN */
+
+.portada {
+    width: 100%;
+}
+
+.portada img {
     width: 100%;
     height: auto;
     display: block;
 }
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+    z-index: 9999;
+}
+
+.whatsapp img {
+    width: 34px;
+    height: 34px;
+}
+
+.whatsapp1 {
+    bottom: 90px;
+}
+
+.whatsapp2 {
+    bottom: 20px;
+}
+
 </style>
+
 </head>
+
+<body>
+
+<!-- IMAGEN -->
+
+<div class="portada">
+
+<img src="Fondo5.jpg.png" alt="Artesanía del Altiplano">
+
+</div>
+
+<!-- WHATSAPP 1 -->
+
+<a href="https://wa.me/51974250064"
+class="whatsapp whatsapp1"
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
+
+<!-- WHATSAPP 2 -->
+
+<a href="https://wa.me/51914856702"
+class="whatsapp whatsapp2"
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
+
+</body>
+
+</html>
 
 <body>
 
