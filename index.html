@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <title>Artesanía del Altiplano</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
     width: 100%;
-    font-family: Arial, sans-serif;
-    background: white;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
+
+/* IMAGEN PRINCIPAL */
 
 .portada {
     width: 100%;
     display: block;
 }
 
+.portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CORREO */
+
 .correo {
+    width: 100%;
     background-color: #5a2d1f;
     color: white;
     text-align: center;
-    padding: 16px 8px;
+    padding: 16px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -38,22 +54,27 @@ body {
     text-decoration: none;
 }
 
+/* WHATSAPP */
+
 .whatsapp {
     position: fixed;
     right: 16px;
-    width: 58px;
-    height: 58px;
-    background-color: #25D366;
-    color: white;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
+    background-color: #25D366;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
     box-shadow: 0 6px 14px rgba(0,0,0,0.35);
     z-index: 9999;
+}
+
+.whatsapp img {
+    width: 34px;
+    height: 34px;
 }
 
 .whatsapp1 {
@@ -63,26 +84,62 @@ body {
 .whatsapp2 {
     bottom: 20px;
 }
+
+/* AJUSTE EXTRA PARA CELULAR */
+
+@media (max-width: 768px) {
+
+    .portada img {
+        width: 100vw;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<img src="Fondo4.jpg.png" class="portada" alt="Artesanía del Altiplano">
+<!-- IMAGEN -->
 
-<div class="correo">
-    Ventas:
-    <a href="mailto:yanethsandraquisecondori@gmail.com">
-        yanethsandraquisecondori@gmail.com
-    </a>
+<div class="portada">
+
+<img src="Fondo4.jpg.png" alt="Artesanía del Altiplano">
+
 </div>
 
-<a href="https://wa.me/51974250064" class="whatsapp whatsapp1" target="_blank">☎</a>
+<!-- CORREO -->
 
-<a href="https://wa.me/51914856702" class="whatsapp whatsapp2" target="_blank">☎</a>
+<div class="correo">
+
+Ventas:
+<a href="mailto:yanethsandraquisecondori@gmail.com">
+yanethsandraquisecondori@gmail.com
+</a>
+
+</div>
+
+<!-- WHATSAPP 1 -->
+
+<a href="https://wa.me/51974250064"
+class="whatsapp whatsapp1"
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
+
+<!-- WHATSAPP 2 -->
+
+<a href="https://wa.me/51914856702"
+class="whatsapp whatsapp2"
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
 
 </body>
-</html>
 
-</body>
 </html>
